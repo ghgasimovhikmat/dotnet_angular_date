@@ -15,7 +15,10 @@ namespace DateVoyage.Extensions
             });
            services.AddCors();
            services.AddScoped<ITokenService, TokenService>();
-           return services;
+           services.AddScoped<IUserRepository,UserRepository>();
+           services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+          
+            return services;
         }
 
     }

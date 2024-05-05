@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "ENcHm7uh08B4Ee+7wxioeng6JhUZOZw0d+CnBqIs41hCM8X3j91GMDk5RB2cCjwMc2jxf3lNPZEaVkA2geh+Ww==",
+  "dgSpecHash": "aqiVv68JgfuXA03FbcPpy2oyghu36xtf6rGjs7ic3NbOKoOkzaCQXF7sbvwrLImQYkaBeIOi9UhTKVRLWmlQ4w==",
   "success": true,
   "projectFilePath": "C:\\Users\\ghgas\\source\\repos\\dotnet_angular_date\\DateVoyage\\DateVoyageAPI\\DateVoyage.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ghgas\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\ghgas\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\ghgas\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ghgas\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.17\\microsoft.aspnetcore.authentication.jwtbearer.7.0.17.nupkg.sha512",
     "C:\\Users\\ghgas\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.13\\microsoft.aspnetcore.openapi.7.0.13.nupkg.sha512",
+    "C:\\Users\\ghgas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\ghgas\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.0\\microsoft.data.sqlite.core.7.0.0.nupkg.sha512",
     "C:\\Users\\ghgas\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.0\\microsoft.entityframeworkcore.7.0.0.nupkg.sha512",
     "C:\\Users\\ghgas\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.0\\microsoft.entityframeworkcore.abstractions.7.0.0.nupkg.sha512",

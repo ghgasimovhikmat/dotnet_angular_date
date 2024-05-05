@@ -1,5 +1,8 @@
-﻿using DateVoyage.Data;
+﻿using AutoMapper;
+using DateVoyage.Data;
+using DateVoyage.DTOs;
 using DateVoyage.Entity;
+using DateVoyage.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -12,23 +15,31 @@ namespace DateVoyage.Controllers
     [Authorize]
     public class UserController : ControllerBase
     {
-        private readonly DataContext _dataContext;
-        public UserController(DataContext dataContext)
+        private readonly IUserRepository _repo;
+        private readonly IMapper _mapper;
+        public UserController(IUserRepository repo, IMapper mapper)
         {
-            _dataContext = dataContext;
+            _repo = repo;
+            _mapper = mapper;
         }
 
-        [AllowAnonymous]
+      //  [AllowAnonymous]
         [HttpGet]
-        public async  Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
+        public async  Task<ActionResult<IEnumerable<MemberDto>>> GetUsers()
         {
-            return await _dataContext.Users.ToListAsync();
+            var users= await _repo.GetUsersAsync();
+
+            var usersToReturn = _mapper.Map<IEnumerable<MemberDto>>(users);
+
+            return Ok(usersToReturn);
         }
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<AppUser>> Get(int id)
+        [HttpGet("{username}")]
+        public async Task<ActionResult<MemberDto>> Get(string username)
         {
-            return await _dataContext.Users.FindAsync(id);
+            var user = await _repo.GetUserByUsernameAsync(username);
+
+            return _mapper.Map<MemberDto>(user);
         }
     }
 }
