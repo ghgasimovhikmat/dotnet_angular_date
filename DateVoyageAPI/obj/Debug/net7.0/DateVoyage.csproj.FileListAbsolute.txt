@@ -218,3 +218,6 @@ C:\Users\ghgas\source\repos\dotnet_angular_date\DateVoyage\DateVoyageAPI\obj\Deb
 C:\Users\ghgas\source\repos\dotnet_angular_date\DateVoyage\DateVoyageAPI\obj\Debug\net7.0\DateVoyage.pdb
 C:\Users\ghgas\source\repos\dotnet_angular_date\DateVoyage\DateVoyageAPI\obj\Debug\net7.0\DateVoyage.genruntimeconfig.cache
 C:\Users\ghgas\source\repos\dotnet_angular_date\DateVoyage\DateVoyageAPI\obj\Debug\net7.0\ref\DateVoyage.dll
+C:\Users\ghgas\source\repos\dotnet_angular_date\DateVoyage\DateVoyageAPI\obj\Debug\net7.0\DateVoyage.sourcelink.json
+C:\Users\ghgas\source\repos\dotnet_angular_date\DateVoyage\DateVoyageAPI\bin\Debug\net7.0\Data\UserSeedData.json
+C:\Users\ghgas\source\repos\dotnet_angular_date\DateVoyage\DateVoyageAPI\bin\Debug\net7.0\Newtonsoft.Json.dll
