@@ -1,4 +1,5 @@
-﻿using DateVoyage.Entity;
+﻿using DateVoyage.DTOs;
+using DateVoyage.Entity;
 
 namespace DateVoyage.Interfaces
 {
@@ -8,6 +9,10 @@ namespace DateVoyage.Interfaces
         Task<IEnumerable<AppUser>> GetUsersAsync();
         Task<AppUser> GetUserByIdAsync(int id);
         Task<AppUser> GetUserByUsernameAsync(string username);
-     
+
+        Task<MemberDto> GetMemberAsync(string username);
+
+        Task<IEnumerable<MemberDto>> GetMembersAsync();
+
     }
 }

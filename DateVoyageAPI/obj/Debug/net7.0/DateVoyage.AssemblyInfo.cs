@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DateVoyage")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+951e2c1e5fe4a8efd309d123b7ad6c1beb9550f7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("DateVoyage")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DateVoyage")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

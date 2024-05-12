@@ -23,13 +23,17 @@ namespace DateVoyage.Controllers
             _mapper = mapper;
         }
 
-      //  [AllowAnonymous]
+        [AllowAnonymous]
         [HttpGet]
         public async  Task<ActionResult<IEnumerable<MemberDto>>> GetUsers()
         {
-            var users= await _repo.GetUsersAsync();
+            //var users= await _repo.GetUsersAsync();
 
-            var usersToReturn = _mapper.Map<IEnumerable<MemberDto>>(users);
+            //var usersToReturn = _mapper.Map<IEnumerable<MemberDto>>(users);
+
+            //return Ok(usersToReturn);
+
+            var usersToReturn = await _repo.GetMembersAsync();
 
             return Ok(usersToReturn);
         }
@@ -37,9 +41,10 @@ namespace DateVoyage.Controllers
         [HttpGet("{username}")]
         public async Task<ActionResult<MemberDto>> Get(string username)
         {
-            var user = await _repo.GetUserByUsernameAsync(username);
+            //            var user = await _repo.GetUserByUsernameAsync(username);
+            return await _repo.GetMemberAsync(username);
 
-            return _mapper.Map<MemberDto>(user);
+            //   return _mapper.Map<MemberDto>(user);
         }
     }
 }
